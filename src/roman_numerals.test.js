@@ -19,3 +19,11 @@ test("convert 9 to IX", () => {
 test("convert 19 to XIX", () => {
   expect(numToRoman(19)).toBe("XIX");
 });
+
+test("convert 49 to XLIX", () => {
+  expect(numToRoman(49)).toBe("XLIX");
+});
+
+test("convert 99 to XCIX", () => {
+  expect(numToRoman(99)).toBe("XCIX");
+});
