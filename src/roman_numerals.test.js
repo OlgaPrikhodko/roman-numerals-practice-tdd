@@ -11,3 +11,11 @@ test("convert 2 to II", () => {
 test("convert 7 to VII", () => {
   expect(numToRoman(7)).toBe("VII");
 });
+
+test("convert 9 to IX", () => {
+  expect(numToRoman(9)).toBe("IX");
+});
+
+test("convert 19 to XIX", () => {
+  expect(numToRoman(19)).toBe("XIX");
+});
