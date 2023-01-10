@@ -4,7 +4,6 @@
 //      10 --> X
 //      7 --> VII;
 
-// I, V, X, L, C, D, M
 const romans = {
   1: "I",
   4: "IV",
@@ -32,13 +31,11 @@ function numToRoman(num) {
 
   let romanNumeral = "";
 
-  // 2        1    I
-  // 7        5    V
   for (let [key, romanSymbol] of Object.entries(romans).reverse()) {
-    const countRomans = Math.floor(num / key); // 7/5=1  ; 2/1 = 2
-    const remainder = num % key; // 2
+    const countRomans = Math.floor(num / key);
+    const remainder = num % key;
     if (countRomans > 0) {
-      romanNumeral += romanSymbol.repeat(countRomans); // II
+      romanNumeral += romanSymbol.repeat(countRomans);
       if (remainder > 0) {
         romanNumeral += numToRoman(remainder);
         break;
