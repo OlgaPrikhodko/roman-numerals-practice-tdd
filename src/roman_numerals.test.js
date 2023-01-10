@@ -40,8 +40,14 @@ test("convert 789 to DCCLXXXIX", () => {
   expect(numToRoman(789)).toBe("DCCLXXXIX");
 });
 
-//     >>> roman(1888)
-//     'MDCCCLXXXVIII'
-//     >>> roman(1999)
-//     'MCMXCIX'
-//     >>> roman(2001)
+test("convert 1888 to MDCCCLXXXVIII", () => {
+  expect(numToRoman(1888)).toBe("MDCCCLXXXVIII");
+});
+
+test("convert 1999 to MCMXCIX", () => {
+  expect(numToRoman(1999)).toBe("MCMXCIX");
+});
+
+test("convert 2001 to MMI", () => {
+  expect(numToRoman(2001)).toBe("MMI");
+});
